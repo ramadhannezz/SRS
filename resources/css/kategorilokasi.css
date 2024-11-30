@@ -1,0 +1,77 @@
+/* kategorilokasi.css */
+.content-container {
+    margin-top: 0.1rem;
+    padding: 1rem;
+    background-color: #fff; /* Contoh warna latar belakang */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.p-mb-4 {
+    background-color: #ffffff; /* Warna latar belakang toolbar */
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; /* Tambahan margin bawah agar tidak menempel dengan tabel */
+}
+
+.table-menu-container {
+    background-color: #ffffff; /* Warna latar belakang toolbar */
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #dad5d5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; /* Tambahan margin bawah agar tidak menempel dengan tabel */
+}
+
+.p-datatable-thead {
+    background-color: #ffffff; /* Warna latar belakang toolbar */
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; /* Tambahan margin bawah agar tidak menempel dengan tabel */
+}
+
+.kota-action-cell .p-button {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.p-button-primary, .p-button-add {
+    background-color: #1d4ed8;
+    border: none;
+}
+
+.p-button-primary:hover, .p-button-add:hover {
+    background-color: #2563eb;
+}
+
+.p-button-warning-edit {
+    background-color: #22C55E;
+    border: none;
+}
+
+.p-button-warning-edit:hover {
+    background-color: #22C55E;
+}
+
+.p-button-danger {
+    background-color: #dc2626;
+    border: none;
+}
+
+.p-button-danger:hover {
+    background-color: #ef4444;
+}
+
+.kota-table-cell {
+    text-align: center;
+}
+
+.colom-header-content {
+    background-color: #d3e8fa;
+}
+
+.kota-column-number {
+    width: 3rem;
+}

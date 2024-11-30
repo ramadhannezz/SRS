@@ -1,0 +1,7 @@
+.layout-submenu-toggler {
+    transition: transform 0.3s ease;
+}
+
+.layout-submenu-toggler.open {
+    transform: rotate(180deg);
+}

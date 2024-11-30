@@ -1,0 +1,196 @@
+/* listorder.css */
+.content-container {
+    margin-top: 0.1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.p-mb-4 {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.table-menu-container {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #dad5d5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.p-datatable-thead {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.listorder-action-cell {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.listorder-header {
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.listorder-table-cell {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.listorder-column-number {
+    width: 50px;
+    text-align: center;
+}
+
+.p-fluid .p-field {
+    margin-bottom: 1rem;
+}
+
+.p-d-flex {
+    display: flex;
+}
+
+.p-jc-end {
+    justify-content: flex-end;
+}
+
+.p-mr-2 {
+    margin-right: 0.5rem;
+}
+
+.p-input-icon-left {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+    left: 1rem;
+}
+
+.p-button-primary, .p-button-add {
+    background-color: #1d4ed8;
+    border: none;
+}
+
+.p-button-primary:hover, .p-button-add:hover {
+    background-color: #2563eb;
+}
+
+.p-button-warning {
+    color: #ffffff;
+    background: #22C55E;
+    border: 1px solid #22C55E;
+}
+
+.p-button-warning:hover {
+    background-color: #22C55E;
+}
+
+.p-button-danger {
+    background-color: #dc2626;
+    border: none;
+}
+
+.p-button-danger:hover {
+    background-color: #ef4444;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.listorder-table-cell {
+    position: relative;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; 
+    z-index: 1000; 
+    left: 100%; 
+    top: 0; 
+}
+
+.popup.show {
+    display: block;
+}
+
+.bullet-number {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.bullet-number li {
+    margin-bottom: 10px; 
+}
+
+.confirmation-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.driver-item, .truck-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.driver-item.selected, .truck-item.selected {
+    background-color: #e0e7ff;
+    border-color: #1d4ed8;
+}
+
+.driver-item:hover, .truck-item:hover {
+    background-color: #f1f5f9;
+}
+
+.assign-link {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.assign-link:hover {
+    text-decoration: underline;
+}
+
+.vendor-item {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.vendor-item:hover {
+    background-color: #f0f0f0;
+}
+
+.vendor-item.selected {
+    background-color: #d1e7dd; /* Menambahkan warna background berbeda untuk item yang dipilih */
+    border-color: #0f5132; /* Warna border untuk item yang dipilih */
+}

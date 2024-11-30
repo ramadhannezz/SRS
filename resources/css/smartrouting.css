@@ -1,0 +1,39 @@
+.smart-routing-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.smart-routing-container .p-dropdown {
+    width: 100%;
+}
+
+.smart-routing-background {
+    background-color: #fff; /* Warna latar belakang */
+    padding: 20px; /* Padding untuk memberi ruang di sekitar konten */
+    border-radius: 10px; /* Sudut border yang membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Mengatur tombol-tombol agar sejajar */
+    gap: 10px; /* Memberikan jarak antar tombol sebanyak 10px */
+}
+
+.button-group .p-button {
+    flex: 0 1 auto; /* Membuat lebar tombol menyesuaikan teks */
+}
+
+.drag-handle{
+    margin-bottom: 5px;
+}
+
+#map {
+    margin-top: 20px;
+        background-color: #fff; /* Warna latar belakang */
+        padding: 20px; /* Padding untuk memberi ruang di sekitar konten */
+        border-radius: 10px; /* Sudut border yang membulat */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+

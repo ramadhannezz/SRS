@@ -1,0 +1,140 @@
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    position: fixed; /* Ubah ke fixed agar modal tetap di posisi tengah saat scrolling */
+    top: 50%; /* Tempatkan 50% dari atas */
+    left: 50%; /* Tempatkan 50% dari kiri */
+    transform: translate(-50%, -50%); /* Pindahkan setengah ukuran modal untuk mendapatkan posisi tengah */
+    animation: slideDown 0.3s ease-out;
+    z-index: 1000; /* Pastikan modal berada di atas elemen lain */
+  }
+  
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 10px;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.close {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  margin-top: 20px;
+}
+
+.upload-section {
+  margin-bottom: 15px;
+}
+
+.upload-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.uploaded-file {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.uploaded-file img {
+  max-width: 100px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.uploaded-file button {
+  border: none;
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #e9ecef;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  margin-right: 10px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+/* UploadSuratJalanModal.css */
+/* UploadSuratJalanModal.css */
+.uploaded-file img {
+  max-width: 100px;
+  max-height: 100px;
+  cursor: pointer;
+}
+
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.image-modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+}
+
+.zoomable-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

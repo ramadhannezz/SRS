@@ -1,0 +1,260 @@
+.monitoring-order-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column; /* Mengatur elemen secara vertikal pada layar kecil */
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row; /* Mengatur elemen secara horizontal pada layar lebih besar */
+  }
+}
+
+.sticky-sidebar {
+  position: relative; /* Mengubah dari fixed ke relative untuk layar kecil */
+  width: 100%; /* Menyesuaikan lebar sidebar dengan lebar layar */
+  max-width: 400px; /* Memastikan sidebar tidak terlalu lebar */
+  height: 780px;
+  background-color: #ffffff;
+  padding: 16px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .sticky-sidebar {
+    position: fixed;
+    top: 120px;
+    left: 10px;
+    width: 370px;
+    max-height: calc(100vh - 100px);
+  }
+}
+
+/* Atur ukuran font untuk seluruh sticky-sidebar */
+.sticky-sidebar * {
+  font-size: 0.80rem;
+  overflow-y: visible;
+}
+
+/* Atur Tinggi Sticky Konsisten di Semua Tab */
+.sticky-sidebar .tabs-content {
+  min-height: 560px; /* Atur tinggi minimum untuk konten tab */
+  height: auto; /* Memastikan tinggi bisa menyesuaikan isi */
+  overflow-y: auto; /* Jika konten melebihi tinggi, tampilkan scroll */
+}
+
+/* Atur ukuran font untuk seluruh Tab sticky-sidebar */
+.sticky-sidebar .tabs-container .MuiTab-root {
+  font-size: 0.80rem; /* Memperkecil ukuran font untuk Tab label */
+}
+
+/* Mengatur padding untuk setiap Tab */
+.sticky-sidebar .tabs-container .MuiTab-root {
+  padding: 10px 1px; /* Memperkecil padding atas-bawah menjadi 4px, dan kiri-kanan menjadi 8px */
+  min-width: auto; /* Menghilangkan minimal lebar default dari Material-UI Tab */
+  flex-grow: 1000;
+}
+
+/* Menghilangkan pengaturan fullWidth untuk Tab */
+.sticky-sidebar .MuiTab-root {
+  flex: 0 1 auto; /* Mengatur flex-grow dan flex-shrink agar lebar menyesuaikan dengan konten */
+  min-width: auto; /* Menghilangkan lebar minimum default */
+  width: auto; /* Menetapkan lebar otomatis sesuai dengan panjang teks */
+  padding: 4px 8px; /* Sesuaikan padding jika diperlukan */
+  text-transform: none; /* Menghilangkan auto capital, menjaga teks sesuai dengan input asli */
+}
+
+.sticky-sidebar .MuiTabs-flexContainer {
+  justify-content: flex-start; /* Mengatur agar tab tidak memenuhi seluruh lebar */
+}
+
+.map-container {
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .map-container {
+    height: auto; /* Menjaga ketinggian penuh pada layar besar */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.legend {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  border-radius: 8px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+
+@media (min-width: 768px) {
+  .legend {
+    top: 10px;
+    right: 60px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.header .icon-button {
+  position: absolute;
+  left: 30px;
+}
+
+.tabs-container {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.tabs-content {
+  margin-top: 16px;
+}
+
+.alert {
+  margin-bottom: 16px;
+}
+
+.table-container {
+  margin-top: 16px;
+}
+
+.button-container {
+  margin-top: 16px;
+}
+
+.divider {
+  border-top: 1px solid #e0e0e0;
+  margin: 16px 0;
+}
+
+.driver-truck {
+  display: flex;
+  flex-direction: column; /* Mengatur elemen secara vertikal */
+  justify-content: flex-start; /* Mengatur elemen dimulai dari atas */
+}
+
+.mini-table th,
+.mini-table td {
+  border: 1px solid #e0e0e0;
+  padding: 8px;
+  text-align: left;
+}
+
+.scrollbar-minimal {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #e0e0e0;
+}
+
+.scrollbar-minimal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-minimal::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.list-item span {
+  flex: 1;
+}
+
+.list-item span:first-child {
+  max-width: 30%;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.list-item span:last-child {
+  flex: 2;
+}
+
+
+/* CC Untuk Tab Detail Status */
+.divider {
+  margin: 16px 0;
+  background-color: #e0e0e0; /* Warna abu-abu untuk garis pemisah */
+}
+
+.button-container {
+  background-color: #1976d2; /* Warna biru untuk tombol */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.button-container:hover {
+  background-color: #1565c0; /* Warna biru lebih gelap saat hover */
+}
+
+.list-item {
+  font-size: 16px; /* Ukuran font untuk item daftar */
+  padding: 8px 0; /* Padding vertikal untuk item daftar */
+}
+
+.list-item-bold {
+  font-weight: bold; /* Teks tebal untuk status yang belum tercapai */
+}
+
+.typography-title {
+  font-size: 18px; /* Ukuran font untuk judul (MUAT/BONGKAR) */
+  font-weight: 600; /* Teks tebal untuk judul */
+  margin-bottom: 8px; /* Jarak bawah judul */
+}
+
+.address-item {
+  font-size: 14px; /* Ukuran font untuk alamat */
+  color: #666666; /* Warna abu-abu untuk teks alamat */
+  margin-bottom: 12px; /* Jarak bawah alamat */
+}
+
+.load-address {
+  margin-left: 0px;
+  padding: 0px;
+}

@@ -1,0 +1,119 @@
+/* createorder.css */
+.content-main {
+    display: flex;
+    gap: 1rem; /* Menambahkan jarak antara kontainer utama dan kontainer kedua */
+}
+
+.content-container {
+    flex: 3;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fff; /* Contoh warna latar belakang */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-container-second {
+    flex: 1;
+    margin-top: 1rem;
+}
+
+.p-fluid .p-field {
+    margin-bottom: 1rem; /* Tambahkan jarak antara kotak input */
+}
+
+.p-card {
+    margin-bottom: 20px;
+}
+
+.p-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.p-card-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.p-inputtext, .p-dropdown, .p-inputnumber, .p-inputtextarea {
+    width: 100%;
+}
+
+.p-button-primary {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.floating-summary {
+    position: sticky;
+    top: 1rem;
+}
+
+.p-inputtext:focus, .p-dropdown:focus, .p-inputnumber-input:focus, .p-inputtextarea:focus {
+    border-color: #1d4ed8;
+    box-shadow: 0 0 8px rgba(29, 78, 216, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.p-card .p-card-body {
+    padding: 1rem;
+}
+
+.p-card .p-card-body p {
+    margin: 0.5rem 0;
+}
+
+.p-card .p-card-title {
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+}
+
+.p-card .p-card-header {
+    background-color: #1d4ed8;
+    color: white;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+
+.p-card .p-card-body {
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.form-flex-container {
+    display: flex;
+    gap: 1rem; /* Jarak antara kolom */
+    flex-wrap: wrap; /* Agar kolom menyesuaikan pada layar kecil */
+}
+
+.form-flex-container .p-field {
+    flex: 1; /* Membuat kolom fleksibel */
+}
+
+.p-field-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .floating-summary {
+        position: static;
+        margin-top: 2rem;
+    }
+
+    .p-button-primary {
+        width: 100%;
+    }
+
+    .form-flex-container {
+        flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar kecil */
+    }
+}
+

@@ -1,0 +1,418 @@
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Beri jarak dengan konten di bawahnya */
+    position: relative;
+  }
+  
+  .header .icon-button {
+    position: absolute;
+    left: 30px;
+  }
+  
+  /* Layout Container */
+  .update-status-trip-container {
+    padding: 0px;
+    margin-bottom: 2000px;
+  }
+  
+  .update-status-trip {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+  }
+  
+  /* Panel Kiri dan Kanan */
+  .left-panel {
+    width: 34%;
+  }
+
+  .right-panel {
+    width: 65%;
+  }
+  
+  /* Detail Trip */
+  .detail-trip {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-trip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .detail-trip h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .arrow-icon {
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow-icon.collapsed {
+    transform: rotate(180deg);
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+  }
+  
+  .detail-trip-content {
+    margin-top: 10px;
+  }
+  
+  .detail-trip-content p {
+    margin: 10px 0; /* Mengatur jarak antar elemen <p> */
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .detail-trip-content p span.label {
+    font-weight: bold; /* Membuat teks deskriptif menjadi bold */
+  }
+  
+  .detail-trip-content p span.value {
+    font-weight: normal; /* Membuat nilai tidak dibold */
+  }
+  
+  
+  
+  /* Penerima Tugas dan Rute Perjalanan */
+  .penerima-tugas-rute {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .penerima-tugas-rute h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .penerima-tugas-rute p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .penerima-tugas-rute-content p {
+    margin-bottom: 10px; /* Mengatur jarak antar p */
+  }
+  
+  .penerima-tugas-rute-content p:first-child {
+    margin-top: 0; /* Menghilangkan margin atas dari p pertama */
+  }
+  
+  .penerima-tugas-rute-content p:last-child {
+    margin-bottom: 20px; /* Menambahkan margin bawah ekstra di p terakhir */
+  }
+  
+  .penerima-tugas-rute-content .label {
+    font-weight: bold; /* Membuat teks label menjadi bold */
+  }
+  
+  .penerima-tugas-rute-content .value {
+    font-weight: normal; /* Membuat teks value tidak bold */
+  }
+  
+  .penerima-tugas-rute img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  
+  /* Peta Trip */
+  .map-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .google-map {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Status Trip */
+
+/* Header */
+.status-trip {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Header Section */
+  .status-trip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Pastikan elemen disejajarkan di tengah secara vertikal */
+    margin-bottom: 20px;
+}
+
+.status-trip-header h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; /* Pastikan line-height sesuai */
+}
+
+.status-trip-header .view-detail-link {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; /* Sesuaikan line-height jika diperlukan */
+}
+
+  
+  .status-trip-header  img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  
+  .head-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .update-muatan-link,
+  .add-detail-link {
+    font-size: 14px;
+  }
+
+  .view-detail-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .view-detail-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Divider */
+  .divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  /* Head Content Box */
+  .head-content-box {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+  }
+  
+  .head-content-box h3 {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .head-content-box p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Content Box */
+  .content-box {
+    background-color: #F9FAFB;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+
+  }
+  
+  .content-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+  }
+  
+  .content-box th,
+  .content-box td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .content-box th {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .content-box td {
+    font-size: 14px;
+  }
+  
+  /* Buttons */
+  .update-muatan-button,
+  .upload-button,
+  .add-detail-status {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .update-muatan-button:hover,
+  .upload-button:hover,
+  .add-detail-status:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Checkbox */
+  input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #007bff;
+  }
+  
+
+
+
+
+/* Footer */
+.footer {
+  padding: 15px;
+  background-color: #fff;
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Pastikan footer tetap di atas */
+}
+
+/* Tombol Simpan Perubahan */
+.save-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 10px; /* Perbaiki padding untuk ukuran tombol */
+  border-radius: 4px; /* Membuat tombol lebih modern */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold; /* Teks lebih tebal */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek mendalam */
+  transition: all 0.3s ease; /* Efek transisi untuk hover */
+}
+
+/* Hover Effect */
+.save-button:hover {
+  background-color: #007bc0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan lebih besar saat hover */
+  transform: translateY(-0px); /* Sedikit efek melayang */
+}
+
+/* Fokus Tombol */
+.save-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); /* Tambahkan efek fokus */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px; /* Kurangi padding di layar kecil */
+    text-align: center; /* Posisi tombol di tengah layar kecil */
+  }
+
+  .save-button {
+    width: 100%; /* Tombol memanjang penuh */
+    padding: 12px; /* Sesuaikan padding */
+    font-size: 14px; /* Ukuran teks lebih kecil */
+  }
+}
+
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content label {
+  display: block;
+  margin: 10px 0;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.modal-content button:last-child {
+  background-color: #ccc;
+}

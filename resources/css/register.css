@@ -1,0 +1,58 @@
+/* Register.css */
+
+.register-background {
+    position: relative;
+    background-image: url('/images/logo/bg-login.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+
+.register-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+}
+
+.logo {
+    margin-top: 0px;
+}
+
+.register-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Tambahkan garis border merah untuk menguji */
+}
+
+@media (max-width: 576px) {
+    .logo {
+        margin-top: 0px;
+    }
+
+    .login-card {
+        padding: 1rem;
+        width: 90%;
+    }
+}

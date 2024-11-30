@@ -1,0 +1,88 @@
+/* vendor.css */
+.content-container {
+    margin-top: 0.1rem;
+    padding: 1rem;
+    background-color: #fff; /* Contoh warna latar belakang */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.p-mb-4 {
+    background-color: #ffffff; /* Warna latar belakang toolbar */
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; /* Tambahan margin bawah agar tidak menempel dengan tabel */
+}
+
+.table-menu-container {
+    background-color: #ffffff; /* Warna latar belakang toolbar */
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #dad5d5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; /* Tambahan margin bawah agar tidak menempel dengan tabel */
+}
+
+.p-datatable-thead {
+    background-color: #ffffff; /* Warna latar belakang toolbar */
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; /* Tambahan margin bawah agar tidak menempel dengan tabel */
+}
+
+.vendor-action-cell {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.colom-header-content {
+    background-color: #f1f1f1; /* Warna latar belakang header */
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.vendor-table-cell {
+    text-align: left;
+}
+
+.vendor-column-number {
+    width: 50px;
+    text-align: center;
+}
+
+.p-fluid .p-field {
+    margin-bottom: 1rem; /* Tambahkan jarak antara kotak input */
+}
+
+.p-d-flex {
+    display: flex;
+}
+
+.p-jc-end {
+    justify-content: flex-end;
+}
+
+.p-mr-2 {
+    margin-right: 0.5rem;
+}
+
+.p-input-icon-left {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+    left: 1rem;
+}
+
+.p-button-warning-edit {
+    color: #ffffff;
+    background: #22C55E;
+    border: 1px solid #22C55E;
+}
