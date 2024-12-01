@@ -1,7 +1,3 @@
-Berikut adalah template README yang menarik dan lengkap untuk proyek Laravel TMS/Smart Routing System Anda:
-
----
-
 # **TMS / Smart Routing System** 🚀
 
 TMS (Transportation Management System) atau **Smart Routing System** adalah sebuah platform berbasis Laravel yang dirancang untuk mengelola transportasi secara efisien dan pintar dengan fitur-fitur modern seperti manajemen dashboard, integrasi API, dan routing berbasis logika otomatis.
