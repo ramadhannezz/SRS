@@ -55,7 +55,7 @@ TMS (Transportation Management System) atau **Smart Routing System** adalah sebu
 
 ### **1. Clone Repository**
 ```bash
-git clone https://github.com/username/repository-name.git
+git clone [https://github.com/username/repository-name.git](https://github.com/ramadhannezz/SRS.git)
 cd repository-name
 ```
 
@@ -140,7 +140,7 @@ Untuk deploy ke server VPS atau production:
 
 ## **🌟 Kontributor**
 - **Re-Developed by**: Ramadhan
-- **Pengembang Awal**: [Contributor Name]
+- **Pengembang Awal**: Samuel Boadu
 - **Terima Kasih kepada**:
   - Komunitas Laravel
   - Pengembang React.js
@@ -154,8 +154,8 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 ## **📧 Kontak**
 Jika Anda memiliki pertanyaan atau butuh bantuan:
-- Email: ramadhan@example.com
-- LinkedIn: [Ramadhan](https://linkedin.com/in/ramadhan)
+- Email: ramadhan8100@gmail.com
+- LinkedIn: [Ramadhan](https://linkedin.com/in/ramadhannezz)
 
 Selamat menggunakan TMS / Smart Routing System! 🚚📍
 
