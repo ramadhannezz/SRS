@@ -14,10 +14,15 @@ class OtpController extends Controller
 
     public function sendOtp(Request $request)
     {
+        Log::info('Request data:', $request->all());
+        Log::info('Incoming Request:', $request->all()); // Log data request
+        
         // Validasi input
         $validator = Validator::make($request->all(), [
             'phone_number' => 'required|digits_between:10,15',
         ]);
+
+        Log::info('Phone number passed validation:', ['phone_number' => $request->phone_number]);
 
         if ($validator->fails()) {
             return response()->json([
@@ -59,7 +64,8 @@ class OtpController extends Controller
     {
         // Validasi input
         $validator = Validator::make($request->all(), [
-            'phone_number' => 'required|digits_between:10,15',
+            'phone_number' => '
+            ',
             'otp_code'     => 'required|digits:4',
         ]);
     
