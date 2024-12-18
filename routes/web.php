@@ -207,4 +207,14 @@ Route::delete('/trucks/{truck}', [TruckController::class, 'destroy'])->name('tru
 
 //=======================================================================//
 
+use App\Http\Controllers\ClaimController;
+
+// Route untuk halaman Claim Management
+Route::get('/claim-management', [ClaimController::class, 'index'])->name('claim-management');
+
+// Route untuk aksi CRUD klaim
+Route::post('/claims', [ClaimController::class, 'store'])->name('claims.store');
+Route::put('/claims/{claim}', [ClaimController::class, 'update'])->name('claims.update');
+Route::delete('/claims/{claim}', [ClaimController::class, 'destroy'])->name('claims.destroy');
+
 require __DIR__.'/auth.php';

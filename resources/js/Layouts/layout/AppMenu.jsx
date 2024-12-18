@@ -40,7 +40,7 @@ const AppMenu = () => {
                 { label: 'List Order', icon: 'pi pi-fw pi-list', to: route('orders.index') },
                     ]
                 },
-                { label: 'Claim Management', icon: 'pi pi-fw pi-shield', to: route('orders.index') },
+                { label: 'Claim Management', icon: 'pi pi-fw pi-shield', to: route('claim-management') },
             ]
         },
     ];

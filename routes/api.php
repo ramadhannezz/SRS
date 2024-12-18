@@ -85,4 +85,10 @@ Route::post('/driver/location', [LocationController::class, 'store']);
 // Tambahkan autoRefresh untuk Memperbarui Lokasi Driver
 Route::get('/driver/latest-location', [LocationController::class, 'getLatestLocation']);
 
-// Untuk menampilkan lokasi dari database
+// Untuk menambahkan claim
+use App\Http\Controllers\ClaimController;
+Route::post('/claims', [ClaimController::class, 'store']);
+
+// Untuk mengambil routes
+Route::get('/orders/{orderId}/routes', [OrderController::class, 'getRoutes']);
+

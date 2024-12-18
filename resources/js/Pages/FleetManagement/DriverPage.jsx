@@ -175,3 +175,268 @@ const DriverPage = ({ drivers }) => {
 };
 
 export default DriverPage;
+
+// import React, { useState } from "react";
+// import { Inertia } from "@inertiajs/inertia";
+// import Layout from "@/Layouts/layout/layout.jsx";
+// import {
+//   Table,
+//   Button,
+//   Modal,
+//   Input,
+//   Space,
+//   Popconfirm,
+//   message,
+//   Spin,
+//   Tooltip,
+// } from "antd";
+// import {
+//   SolutionOutlined,
+//   PhoneOutlined,
+//   IdcardOutlined,
+//   CarOutlined,
+//   NumberOutlined,
+//   FileTextOutlined,
+//   DropboxOutlined,
+//   ProductOutlined,
+//   CheckCircleOutlined,
+//   CalendarOutlined,
+//   PlusOutlined,
+//   PlusCircleOutlined,
+// } from "@ant-design/icons";
+// import DriverFormModal from "./DriverFormModal";
+// import { createStyles } from "antd-style";
+// import dayjs from "dayjs";
+
+// const useStyle = createStyles(({ css, token }) => {
+//   const { antCls } = token;
+//   return {
+//     customTable: css`
+//       ${antCls}-table-container {
+//         ${antCls}-table-body {
+//           scrollbar-width: thin;
+//           scrollbar-color: #eaeaea transparent;
+//           scrollbar-gutter: stable;
+//         }
+//         ${antCls}-table-content {
+//           overflow-x: auto;
+//         }
+//       }
+//       .centered-column {
+//         text-align: center;
+//       }
+//       thead > tr > th {
+//         text-align: center !important;
+//       }
+//     `,
+//   };
+// });
+
+// const DriverPage = ({ drivers }) => {
+//   const { styles } = useStyle();
+//   const [editingDriver, setEditingDriver] = useState(null);
+//   const [modalVisible, setModalVisible] = useState(false);
+//   const [loading, setLoading] = useState(false);
+//   const [searchQuery, setSearchQuery] = useState("");
+//   const [pagination, setPagination] = useState({ current: 1, pageSize: 10 });
+
+//   const filteredDrivers = drivers.filter((driver) =>
+//     ["name", "phone", "ktp", "sim"].some((key) =>
+//       driver[key]?.toString().toLowerCase().includes(searchQuery.toLowerCase())
+//     )
+//   );
+
+//   const columns = [
+//     {
+//       title: (
+//         <span>
+//           <NumberOutlined style={{ marginRight: "5px", color: "#1890ff" }} /> No
+//         </span>
+//       ),
+//       key: "no",
+//       className: "centered-column",
+//       render: (text, record, index) => {
+//         const currentPage = pagination.current || 1;
+//         const pageSize = pagination.pageSize || 10;
+//         return (currentPage - 1) * pageSize + index + 1;
+//       },
+//     },
+//     {
+//       title: (
+//         <span>
+//           <SolutionOutlined
+//             style={{ marginRight: "5px", color: "#52c41a" }}
+//           />
+//           Nama Driver
+//         </span>
+//       ),
+//       dataIndex: "name",
+//       key: "name",
+//       className: "centered-column",
+//     },
+//     {
+//       title: (
+//         <span>
+//           <PhoneOutlined style={{ marginRight: "5px", color: "#faad14" }} />
+//           No. Telepon
+//         </span>
+//       ),
+//       dataIndex: "phone",
+//       key: "phone",
+//       className: "centered-column",
+//       render: (text) => (
+//         <Tooltip title={text}>
+//           <span>{text}</span>
+//         </Tooltip>
+//       ),
+//     },
+//     {
+//       title: (
+//         <span>
+//           <IdcardOutlined style={{ marginRight: "5px", color: "#1890ff" }} />
+//           No. KTP
+//         </span>
+//       ),
+//       dataIndex: "ktp",
+//       key: "ktp",
+//       className: "centered-column",
+//     },
+//     {
+//       title: (
+//         <span>
+//           <CarOutlined style={{ marginRight: "5px", color: "#52c41a" }} /> No. SIM
+//         </span>
+//       ),
+//       dataIndex: "sim",
+//       key: "sim",
+//       className: "centered-column",
+//     },
+//     {
+//       title: (
+//         <span>
+//           <CheckCircleOutlined
+//             style={{ marginRight: "5px", color: "#13c2c2" }}
+//           />
+//           Status Driver
+//         </span>
+//       ),
+//       dataIndex: "status",
+//       key: "status",
+//       className: "centered-column",
+//       render: (text) => (text ? "Aktif" : "Non-Aktif"),
+//     },
+//     {
+//       title: "Aksi",
+//       key: "actions",
+//       fixed: "right",
+//       width: 100,
+//       className: "centered-column",
+//       render: (text, record) => (
+//         <Space>
+//           <Tooltip title="Edit Data">
+//             <Button
+//               color="primary" variant="filled"
+//               type="link"
+//               onClick={() => handleEdit(record)}
+//             >
+//               Edit
+//             </Button>
+//           </Tooltip>
+//           <Tooltip title="Hapus Data">
+//             <Popconfirm
+//               title="Yakin ingin menghapus data ini?"
+//               onConfirm={() => handleDelete(record.id)}
+//               okText="Ya"
+//               cancelText="Tidak"
+//             >
+//               <Button color="danger" variant="filled" type="link" danger>
+//                 Hapus
+//               </Button>
+//             </Popconfirm>
+//           </Tooltip>
+//         </Space>
+//       ),
+//     },
+//   ];
+
+//   const handleEdit = (driver) => {
+//     setEditingDriver(driver);
+//     setModalVisible(true);
+//   };
+
+//   const handleDelete = (id) => {
+//     setLoading(true);
+//     Inertia.delete(`/drivers/${id}`, {
+//       onSuccess: () => {
+//         message.success("Data berhasil dihapus!");
+//       },
+//       onError: () => {
+//         message.error("Gagal menghapus data");
+//       },
+//       onFinish: () => setLoading(false),
+//     });
+//   };
+
+//   const resetModal = () => {
+//     setEditingDriver(null);
+//     setModalVisible(false);
+//   };
+
+//   return (
+//     <Layout>
+//       <div
+//         style={{
+//           padding: "20px",
+//           backgroundColor: "#fff",
+//           borderRadius: "5px",
+//           boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+//         }}
+//       >
+//         <div
+//           style={{
+//             marginBottom: "20px",
+//             display: "flex",
+//             justifyContent: "space-between",
+//           }}
+//         >
+//           <Input.Search
+//             placeholder="Cari berdasarkan Nama, No. Telepon..."
+//             style={{ width: "300px" }}
+//             value={searchQuery}
+//             onChange={(e) => setSearchQuery(e.target.value)}
+//           />
+//     <Button
+//       type="primary"
+//       icon={<PlusCircleOutlined />} // Tambahkan ikon di sini
+//       onClick={() => setModalVisible(true)}
+//     >
+//       Tambah Driver Baru
+//     </Button>
+//         </div>
+
+//         <Spin spinning={loading} tip="Memuat...">
+//           <Table
+//             className={styles.customTable}
+//             columns={columns}
+//             dataSource={filteredDrivers}
+//             rowKey="id"
+//             pagination={{
+//               ...pagination,
+//               onChange: (page, pageSize) =>
+//                 setPagination({ current: page, pageSize }),
+//             }}
+//             scroll={{ x: "max-content" }}
+//           />
+//         </Spin>
+
+//         <DriverFormModal
+//           visible={modalVisible}
+//           editingDriver={editingDriver}
+//           onClose={resetModal}
+//         />
+//       </div>
+//     </Layout>
+//   );
+// };
+
+// export default DriverPage;

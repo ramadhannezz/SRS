@@ -221,84 +221,6 @@ class OrderController extends Controller
             return response()->json(['message' => 'Failed to assign vendor.'], 500);
         }
     }
-    
-    // public function updateStatus(Request $request, $id)
-    // {
-    //     Log::info('Data diterima:', $request->all());
-    
-    //     $order = Order::findOrFail($id);
-    //     $statuses = json_decode($request->input('status'), true);
-    
-    //     $validStatusOrder = [
-    //         'Dijadwalkan Berangkat',
-    //         'Menuju Lokasi Muat',
-    //         'Sampai Lokasi Muat',
-    //         'Mulai Muat',
-    //         'Selesai Muat',
-    //         'Menuju Lokasi Bongkar',
-    //         'Sampai Lokasi Bongkar',
-    //         'Mulai Bongkar',
-    //         'Selesai Bongkar'
-    //     ];
-    
-    //     $latestStatus = null;
-    //     $latestTimestamp = null;
-    
-    //     foreach ($statuses as $status) {
-    //         $statusIndex = array_search($status['name'], $validStatusOrder);
-    
-    //         if ($status['checked'] && $statusIndex !== false) {
-    //             try {
-    //                 OrderStatusLog::updateOrCreate(
-    //                     [
-    //                         'orders_id' => $order->id,
-    //                         'status' => $status['name'],
-    //                         'location_id' => $status['location_id'],
-    //                     ],
-    //                     [
-    //                         'timestamp' => $status['date']
-    //                     ]
-    //                 );
-    
-    //                 $latestStatus = $status['name'];
-    //                 $latestTimestamp = $status['date'];
-    
-    //                 Log::info('Status disimpan:', ['status' => $latestStatus, 'timestamp' => $latestTimestamp]);
-    //             } catch (\Exception $e) {
-    //                 Log::error('Gagal menyimpan status:', ['error' => $e->getMessage()]);
-    //             }
-    //         } elseif (!$status['checked'] && $statusIndex !== false) {
-    //             // Hapus status dari order_status_logs jika di-uncheck
-    //             OrderStatusLog::where([
-    //                 ['orders_id', '=', $order->id],
-    //                 ['status', '=', $status['name']],
-    //                 ['location_id', '=', $status['location_id']],
-    //             ])->delete();
-    //         }
-    //     }
-    
-    //     // Logika untuk mengatur current_status
-    //     if (in_array('Menuju Lokasi Bongkar', array_column($statuses, 'name')) && 
-    //         !in_array(true, array_column($statuses, 'checked'))) {
-    //         // Jika status Menuju Lokasi Bongkar di-uncheck dan status lainnya tidak ada
-    //         $order->current_status = 'Dijadwalkan Berangkat';
-    //     } else {
-    //         // Ambil status terbaru dari order_status_logs
-    //         $lastStatusLog = OrderStatusLog::where('orders_id', $order->id)
-    //                                        ->orderBy('timestamp', 'desc')
-    //                                        ->first();
-    
-    //         if ($lastStatusLog) {
-    //             $order->current_status = $lastStatusLog->status;
-    //         } else {
-    //             $order->current_status = 'Dijadwalkan Berangkat'; // Jika tidak ada status tersisa
-    //         }
-    //     }
-    
-    //     $order->save();
-    
-    //     return response()->json(['message' => 'Status berhasil diupdate.']);
-    // }
 
     // Kode baru fix current_status akan diperbarui dengan benar, bahkan jika beberapa status diperbarui sekaligus
     public function updateStatus(Request $request, $id)
@@ -636,6 +558,30 @@ class OrderController extends Controller
 
         return response()->json($orderDetails);
     }
+
+    public function getRoutes($orderId)
+    {
+        $order = Order::find($orderId);
+    
+        if (!$order) {
+            return response()->json(['status' => 'error', 'message' => 'Order not found'], 404);
+        }
+    
+        // Ambil kolom routes dan pastikan tidak null
+        $routes = json_decode($order->routes);
+    
+        if (empty($routes) || count($routes) < 2) {
+            Log::error("Routes data is invalid or less than two points for order: $orderId");
+             return response()->json(['status' => 'error', 'message' => 'Not enough destinations'], 400);
+        }
+    
+        return response()->json([
+            'status' => 'success',
+            'data' => $routes
+        ]);
+    }
+    
+
 
 // ===== END MOBILE APP ANDROID x IOS BACKEND ===== //
 

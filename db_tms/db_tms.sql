@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Sep 25, 2024 at 06:21 AM
+-- Host: 127.0.0.1
+-- Generation Time: Dec 01, 2024 at 12:56 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -85,25 +85,35 @@ CREATE TABLE `documents` (
 --
 
 INSERT INTO `documents` (`id`, `orders_id`, `unload_address_id`, `type`, `document_type`, `file_path`, `created_at`, `updated_at`) VALUES
-(46, 36, 37, 'unloading', 'surat_jalan', 'eF4j5GhXcTDWkGCjpBxEuPMQsD2JwhHojrgISVss.png', '2024-09-24 07:41:04', '2024-09-24 07:41:04'),
-(47, 36, 37, 'unloading', 'packing_list', 'pvlxlHV4HyYqKAgQ8CsbOwa3eU4y5t2BAE0kWP4k.png', '2024-09-24 07:41:05', '2024-09-24 07:41:05'),
-(48, 36, 37, 'unloading', 'dokumen_lain', 'UMakNG1ePf2MXs7s9S9di9LhQD1cZql2Y2TbrY5h.png', '2024-09-24 07:41:05', '2024-09-24 07:41:05'),
-(49, 34, 28, 'unloading', 'surat_jalan', 'utgp59bQDBKtq47Urb790C31v3guEJitqhsjjM5G.png', '2024-09-24 07:44:09', '2024-09-24 07:44:09'),
-(50, 34, 28, 'unloading', 'proses_bongkar', 'kGZ6Sd1kxKuHWtKa0fnkuI1glgZcnL1JOzLPY5wN.png', '2024-09-24 07:44:10', '2024-09-24 07:44:10'),
-(51, 34, 28, 'unloading', 'packing_list', 'Qgbp3ZtkIS5cIotlrYxGHah5luU0932GBOibsmdT.png', '2024-09-24 07:44:10', '2024-09-24 07:44:10'),
-(52, 34, 28, 'unloading', 'dokumen_lain', 'FG9D6DRUh6WMcbG64hhFTXqFQMVWqF7u6BuPTEO4.png', '2024-09-24 07:44:10', '2024-09-24 07:44:10'),
-(53, 35, NULL, 'loading', 'surat_jalan', '7UTZiY8xy3gIc5m8qErKEdtvRLN3dEccgC1xRBtU.png', '2024-09-24 08:09:29', '2024-09-24 08:09:29'),
-(54, 35, NULL, 'loading', 'proses_muat', '3nxMprKmnDmqUPHu3h22NqnxpL6SE1khOAzKHvPa.png', '2024-09-24 08:09:29', '2024-09-24 08:09:29'),
-(55, 35, NULL, 'loading', 'packing_list', 'BxSQPDf5aSly8wnt0NNvAfBs7SEAy5fdpKKFZGF3.png', '2024-09-24 08:09:30', '2024-09-24 08:09:30'),
-(56, 35, NULL, 'loading', 'dokumen_lain', 'fzDqpL41myNJd7KPOgBy83QRd7JaR3zsf49aAnFr.png', '2024-09-24 08:09:30', '2024-09-24 08:09:30'),
-(57, 35, 31, 'unloading', 'surat_jalan', 'zDgBeF0yoB8QbmcxSBQYfcsgsXRIBPBEifDch8Mx.png', '2024-09-24 08:10:46', '2024-09-24 08:10:46'),
-(58, 35, 31, 'unloading', 'proses_bongkar', 'SIIg0ZP1JnAImfK2iWbE71Y28Ai8CjRGStHRFdrQ.png', '2024-09-24 08:10:46', '2024-09-24 08:10:46'),
-(59, 35, 31, 'unloading', 'packing_list', 'vzIzHF1eN4qLXyajyJONrFrP5FjAd0Jk3Nz3nCNU.png', '2024-09-24 08:10:46', '2024-09-24 08:10:46'),
-(60, 35, 31, 'unloading', 'dokumen_lain', 'yJEwFZCl7FbmkW9GHpspZI5FkhdxAq03n1YvGBPy.png', '2024-09-24 08:10:46', '2024-09-24 08:10:46'),
-(61, 37, NULL, 'loading', 'surat_jalan', 'Kxa5kZHKpd1wwQ4tWh6jY7oPvpJOrq8bT5hOi7by.png', '2024-09-24 11:21:04', '2024-09-24 11:21:04'),
-(62, 37, NULL, 'loading', 'proses_muat', 'IhTs5HyIu3GzTuUMMIZfvCsUkrmyjv8bfGE153DU.png', '2024-09-24 11:21:04', '2024-09-24 11:21:04'),
-(63, 37, NULL, 'loading', 'packing_list', 'thlxvaBzke3tF5it5Z9BijYvO7zgwp7wV5X5h3Z5.png', '2024-09-24 11:21:04', '2024-09-24 11:21:04'),
-(64, 37, NULL, 'loading', 'dokumen_lain', 'jYwQxn3fIoo0VYi1VPtV1Wem45Gc7HozQ9M04GjP.png', '2024-09-24 11:21:05', '2024-09-24 11:21:05');
+(165, 36, NULL, 'loading', 'surat_jalan', 'WvttayjGMeT6yU6M94W9SQhvWjfjukdwVYtY6Nwe.jpg', '2024-09-28 11:30:06', '2024-11-24 20:45:42'),
+(166, 36, NULL, 'loading', 'packing_list', 'anJUlegkDjJ83NVVK0M2ZIkCJm2P9oqOt3QXqZ7k.png', '2024-09-28 11:30:06', '2024-09-28 11:30:06'),
+(167, 36, NULL, 'loading', 'dokumen_lain', 'D4wEWiRNI5HUtToRBdOAN8pnsMg2qG2VmIWLIh4C.png', '2024-09-28 11:30:06', '2024-09-28 11:30:06'),
+(168, 36, NULL, 'loading', 'proses_muat', 'uPiCJ5tHMpB5NueFSFYhJP3OD64SV3vC6Cl41e0e.png', '2024-09-28 11:30:06', '2024-09-28 11:30:06'),
+(169, 36, 37, 'unloading', 'surat_jalan', 'f24MwRQt2chRgWuvWiR086P4jQ3ohYGmCleCfwHV.png', '2024-09-28 11:30:35', '2024-09-28 11:30:35'),
+(170, 36, 37, 'unloading', 'proses_bongkar', 't6qVVzxT2vG9su4rDbjhM74gRHcLGrH5SSFGCTvU.png', '2024-09-28 11:30:36', '2024-09-28 11:30:36'),
+(171, 36, 37, 'unloading', 'packing_list', 'RTHfbXtXj9aKw9dchaOhsPNvu7Y0o3Riln0Wdm0w.png', '2024-09-28 11:30:36', '2024-09-28 11:30:36'),
+(172, 36, 37, 'unloading', 'dokumen_lain', 'XwqchMqNfTnVywKrbduRFUR2AcqPBbIjHN0cmRG4.png', '2024-09-28 11:30:36', '2024-09-28 11:30:36'),
+(173, 38, NULL, 'loading', 'surat_jalan', 'lKijtpSrZHnT59mhSY2eXvtGpQjatjpXwptKTFn8.png', '2024-09-28 11:37:14', '2024-09-28 11:37:14'),
+(174, 38, NULL, 'loading', 'proses_muat', 'rOr5aIIX8ew7RVz0qbO29Xkj7TegKl96WUp7wuEM.png', '2024-09-28 11:37:14', '2024-09-28 11:37:14'),
+(175, 38, NULL, 'loading', 'packing_list', '80yTCTLjkLkP7aJkMWg6LKAhKxRBNkp6LahRFVBk.png', '2024-09-28 11:37:15', '2024-09-28 11:37:15'),
+(176, 38, NULL, 'loading', 'dokumen_lain', 'OzjWQOFsF23GLimCsEnmUsgVpRwZfRg1j3CTO1PN.png', '2024-09-28 11:37:15', '2024-09-28 11:37:15'),
+(177, 38, 36, 'unloading', 'surat_jalan', 'UC9Ntk662iardeds3osmAE2i9iiux8K7kZZJNA2V.png', '2024-09-28 11:43:22', '2024-09-28 11:43:22'),
+(178, 38, 36, 'unloading', 'proses_bongkar', 'wYV6oxNSkSs3V6c3NFoqKslbJQMIrKDfuvzIZelw.png', '2024-09-28 11:43:22', '2024-09-28 11:43:22'),
+(179, 38, 36, 'unloading', 'packing_list', 'iuVyAes5Hp1D3JZKLBQobnmBkieogjLnrN5zOktD.png', '2024-09-28 11:43:22', '2024-09-28 11:43:22'),
+(180, 38, 36, 'unloading', 'dokumen_lain', 'arxeRgnxo7KBQF0kLRWhx42UX5UpvH3oeH65TaBK.png', '2024-09-28 11:43:22', '2024-09-28 11:43:22'),
+(181, 38, 38, 'unloading', 'surat_jalan', 'KwJECcTmNJLJQUcOwRb5iT03WkKkGncI5Y9TEOb2.png', '2024-09-28 11:44:11', '2024-09-28 11:44:11'),
+(182, 38, 38, 'unloading', 'proses_bongkar', 'Qf0Xm1kEyFXIu6VdbyqirPiop3fBW8dkenlmtJgI.png', '2024-09-28 11:44:12', '2024-09-28 11:44:12'),
+(183, 38, 38, 'unloading', 'packing_list', '5dNwxaJx076smFwdfa6zKrbqwECmLbgSqihdprtS.png', '2024-09-28 11:44:12', '2024-09-28 11:44:12'),
+(184, 38, 38, 'unloading', 'dokumen_lain', 'eyUmYbFxNi6jvsfT3nncJwKDtU96gCzoutm4lpjL.png', '2024-09-28 11:44:12', '2024-09-28 11:44:12'),
+(185, 35, NULL, 'loading', 'surat_jalan', 'SqomOzFgfi0WqwnetfW5U9qDTxFlr6pNkFdSCcDb.png', '2024-09-30 22:40:54', '2024-09-30 22:40:54'),
+(186, 35, NULL, 'loading', 'proses_muat', 'tplNSH7zbTkqB703dIDNAWnlxg04AE2lwzOZqwbY.png', '2024-09-30 22:40:54', '2024-09-30 22:40:54'),
+(187, 35, NULL, 'loading', 'packing_list', 'Z5KUKRdvvVDjLaD5I262K570XprYDMZInX4sXhfR.png', '2024-09-30 22:40:55', '2024-09-30 22:40:55'),
+(188, 35, NULL, 'loading', 'dokumen_lain', 'dBUPWDJ3f5Gm6DwBoYvxdeFJtctQcyGSTBYBoW52.png', '2024-09-30 22:40:55', '2024-09-30 22:40:55'),
+(189, 35, 31, 'unloading', 'surat_jalan', 'otf2WUpnQpOWfJzNTqP2qLBy9B8HDlis7hDCBVm7.png', '2024-09-30 22:41:30', '2024-09-30 22:41:30'),
+(190, 35, 31, 'unloading', 'proses_bongkar', 'NAESAOOakjWoC4zt0DHMyO3Oaf4fyQ4q5gqDtiN5.jpg', '2024-09-30 22:41:30', '2024-09-30 22:41:30'),
+(191, 35, 31, 'unloading', 'packing_list', '5dyc6ouh9MsZKc45AyXISbLyq6xAlqt1rfTb17Lj.jpg', '2024-09-30 22:41:31', '2024-09-30 22:41:31'),
+(192, 35, 31, 'unloading', 'dokumen_lain', 'sw1AWzkzh8JDUuVtY3abBu3vtPOCW2N9fsjA3w9r.png', '2024-09-30 22:41:31', '2024-09-30 22:41:31'),
+(193, 34, NULL, 'loading', 'surat_jalan', 'pOSdEPTXwOgJFxL7DEof29bxRvFoCi4GQ6PZfNFG.jpg', '2024-11-22 17:35:13', '2024-11-22 17:35:13');
 
 -- --------------------------------------------------------
 
@@ -130,7 +140,32 @@ CREATE TABLE `drivers` (
 
 INSERT INTO `drivers` (`id`, `name`, `email`, `password`, `phone`, `otp`, `ktp`, `sim`, `created_at`, `updated_at`) VALUES
 (1, 'Ramadhan', '', '', '081119932111', 0, '3208150801000002', '123456789', '2024-07-22 02:29:18', '2024-07-22 02:31:23'),
-(2, 'Ramkative', '', '', '085721207992', 0, '3208150801000002', '789456123', '2024-07-22 02:32:13', '2024-07-22 02:32:13');
+(2, 'Ramkative', '', '', '085721207991', 0, '3208150801000002', '789456123', '2024-07-22 02:32:13', '2024-07-22 02:32:13'),
+(3, 'Rama', 'rama@waresix.com', 'ramadan10', '085721207992', 0, '3208150801000009', '12345678', '2024-09-29 06:02:45', '2024-09-29 06:02:45');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `driver_locations`
+--
+
+CREATE TABLE `driver_locations` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `driver_id` int(11) NOT NULL,
+  `latitude` decimal(10,7) NOT NULL,
+  `longitude` decimal(10,7) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `driver_locations`
+--
+
+INSERT INTO `driver_locations` (`id`, `driver_id`, `latitude`, `longitude`, `created_at`, `updated_at`) VALUES
+(1, 3, 37.4219983, -122.0840000, '2024-10-01 03:26:29', '2024-10-01 03:26:29'),
+(2, 3, 37.4219983, -122.0840000, '2024-10-01 04:01:08', '2024-10-01 04:01:08'),
+(3, 3, -6.3742210, 106.8958040, '2024-11-16 17:57:00', '2024-11-16 17:57:00');
 
 -- --------------------------------------------------------
 
@@ -147,6 +182,29 @@ CREATE TABLE `failed_jobs` (
   `exception` longtext NOT NULL,
   `failed_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jobs`
+--
+
+CREATE TABLE `jobs` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `queue` varchar(255) NOT NULL,
+  `payload` longtext NOT NULL,
+  `attempts` tinyint(3) UNSIGNED NOT NULL,
+  `reserved_at` int(10) UNSIGNED DEFAULT NULL,
+  `available_at` int(10) UNSIGNED NOT NULL,
+  `created_at` int(10) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `jobs`
+--
+
+INSERT INTO `jobs` (`id`, `queue`, `payload`, `attempts`, `reserved_at`, `available_at`, `created_at`) VALUES
+(5, 'default', '{\"uuid\":\"c360e5b5-a545-45ed-beed-5d68bba1e01d\",\"displayName\":\"App\\\\Events\\\\LocationUpdated\",\"job\":\"Illuminate\\\\Queue\\\\CallQueuedHandler@call\",\"maxTries\":null,\"maxExceptions\":null,\"failOnTimeout\":false,\"backoff\":null,\"timeout\":null,\"retryUntil\":null,\"data\":{\"commandName\":\"Illuminate\\\\Broadcasting\\\\BroadcastEvent\",\"command\":\"O:38:\\\"Illuminate\\\\Broadcasting\\\\BroadcastEvent\\\":14:{s:5:\\\"event\\\";O:26:\\\"App\\\\Events\\\\LocationUpdated\\\":3:{s:9:\\\"driver_id\\\";i:3;s:8:\\\"latitude\\\";d:37.4219983;s:9:\\\"longitude\\\";d:-122.084;}s:5:\\\"tries\\\";N;s:7:\\\"timeout\\\";N;s:7:\\\"backoff\\\";N;s:13:\\\"maxExceptions\\\";N;s:10:\\\"connection\\\";N;s:5:\\\"queue\\\";N;s:15:\\\"chainConnection\\\";N;s:10:\\\"chainQueue\\\";N;s:19:\\\"chainCatchCallbacks\\\";N;s:5:\\\"delay\\\";N;s:11:\\\"afterCommit\\\";N;s:10:\\\"middleware\\\";a:0:{}s:7:\\\"chained\\\";a:0:{}}\"}}', 0, NULL, 1731805022, 1731805022);
 
 -- --------------------------------------------------------
 
@@ -325,7 +383,11 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (46, '2024_08_25_183558_create_documents_table', 27),
 (47, '2024_08_26_050832_create_documents_table', 28),
 (48, '2024_08_26_062254_add_unload_address_id_to_documents_table', 29),
-(49, '2024_09_09_091750_create_otp_codes_table', 30);
+(49, '2024_09_09_091750_create_otp_codes_table', 30),
+(50, '2024_09_27_044603_add_document_and_cargo_data_to_order_status_logs_table', 31),
+(51, '2024_09_29_065712_add_drivers_id_to_otp_codes_table', 32),
+(52, '2024_10_01_062430_create_driver_locations_table', 33),
+(53, '2024_10_01_110645_create_jobs_table', 34);
 
 -- --------------------------------------------------------
 
@@ -364,11 +426,11 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `nomor_order`, `customers_id`, `services_id`, `tanggal_muat`, `typetrucks_id`, `truck_id`, `vendor_id`, `driver_id`, `jumlah_armada`, `nama_muatan`, `berat_muatan`, `volume_muatan`, `jumlah_barang`, `uang_jalan`, `uang_tol`, `catatan`, `created_at`, `updated_at`, `load_address`, `unload_addresses`, `routes`, `current_status`) VALUES
-(34, 'SRS15092024000001', 1, 1, '2024-09-15', 1, NULL, NULL, NULL, 1, 'Pipa Besi AW 1/2', 11000, 12, 10000, 200000, 2000000, 'Haha', '2024-09-15 08:43:23', '2024-09-24 07:44:10', '{\"id\":1,\"name\":\"PT. Rusli Vinilon Sakti\",\"address\":\"PT. Rusli Vinilon Sakti - Jl. Raya Narogong No.KM 15, RW.5, Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820\",\"kotas_id\":1,\"coordinate\":\"-6.3506041,106.9696443\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-10T04:03:31.000000Z\",\"updated_at\":\"2024-06-10T04:03:31.000000Z\"}', '[{\"id\":28,\"name\":\"Aneka Elektro I\",\"address\":\"Aneka Elektro I - Jl. Raya Pasar Minggu No.83 7, RT.2\\/RW.1, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12510\",\"kotas_id\":5,\"coordinate\":\"-6.2832999,106.8444239\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-19T04:56:12.000000Z\",\"updated_at\":\"2024-06-19T04:56:12.000000Z\"}]', '[{\"lat\":-6.3507166,\"lng\":106.974842},{\"lat\":-6.284407499999999,\"lng\":106.8445221}]', 'Selesai Bongkar'),
-(35, 'SRS15092024000002', 1, 1, '2024-09-15', 2, NULL, NULL, NULL, 1, 'Pipa Besi AW 1/2', 1200, 1200, 10000, 20000, 2000000, 'Haghahsa', '2024-09-15 08:47:10', '2024-09-24 08:10:47', '{\"id\":1,\"name\":\"PT. Rusli Vinilon Sakti\",\"address\":\"PT. Rusli Vinilon Sakti - Jl. Raya Narogong No.KM 15, RW.5, Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820\",\"kotas_id\":1,\"coordinate\":\"-6.3506041,106.9696443\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-10T04:03:31.000000Z\",\"updated_at\":\"2024-06-10T04:03:31.000000Z\"}', '[{\"id\":31,\"name\":\"Bangun Indah Gemilang(Psr Mgg)\",\"address\":\"Bangun Indah Gemilang(Psr Mgg) - 12, Jl. Taman Margasatwa Raya No.2, RT.12\\/RW.5, Jati Padang, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12540\",\"kotas_id\":5,\"coordinate\":\"-6.292806,106.8228914\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-19T04:56:12.000000Z\",\"updated_at\":\"2024-06-19T04:56:12.000000Z\"}]', '[{\"lat\":-6.3507166,\"lng\":106.974842},{\"lat\":-6.293070699999999,\"lng\":106.8230966}]', 'Selesai Bongkar'),
-(36, 'SRS15092024000003', 2, 1, '2024-09-15', 1, NULL, NULL, NULL, 1, 'Pipa Besi AW 1/2', 12, 12, 120000, 20000, 2000000, 'Bawa bom nuklir ya', '2024-09-15 08:50:12', '2024-09-24 07:41:05', '{\"id\":1,\"name\":\"PT. Rusli Vinilon Sakti\",\"address\":\"PT. Rusli Vinilon Sakti - Jl. Raya Narogong No.KM 15, RW.5, Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820\",\"kotas_id\":1,\"coordinate\":\"-6.3506041,106.9696443\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-10T04:03:31.000000Z\",\"updated_at\":\"2024-06-10T04:03:31.000000Z\"}', '[{\"id\":37,\"name\":\"Bumi Mas (Nawi), TB\",\"address\":\"Bumi Mas (Nawi), TB - No. 29 B, Jl. H. Nawi Raya, RT.7\\/RW.2, Gandaria Sel., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12420\",\"kotas_id\":5,\"coordinate\":\"-6.2643107,106.7917814\",\"kategori_lokasi_id\":6,\"created_at\":\"2024-06-19T04:56:12.000000Z\",\"updated_at\":\"2024-06-19T04:56:12.000000Z\"}]', '[{\"lat\":-6.3507166,\"lng\":106.974842},{\"lat\":-6.2637247,\"lng\":106.7935374}]', 'Mulai Bongkar'),
-(37, 'SRS24092024000001', 1, 1, '2024-09-24', 1, NULL, NULL, NULL, 1, 'Pipa Paralon AW 1/2', 11000, 12, 100, 200000, 200000, 'Jangan lupa bawa keluarga ya sekalian piknik', '2024-09-23 21:15:29', '2024-09-24 11:22:33', '{\"id\":1,\"name\":\"PT. Rusli Vinilon Sakti\",\"address\":\"PT. Rusli Vinilon Sakti - Jl. Raya Narogong No.KM 15, RW.5, Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820\",\"kotas_id\":1,\"coordinate\":\"-6.3506041,106.9696443\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-10T04:03:31.000000Z\",\"updated_at\":\"2024-06-10T04:03:31.000000Z\"}', '[{\"id\":33,\"name\":\"Bangun Jaya ( Pasar Minggu )\",\"address\":\"Bangun Jaya ( Pasar Minggu ) - Jl. Raya Ps. Minggu No.43, Pejaten Timur, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12510\",\"kotas_id\":5,\"coordinate\":\"-6.2836997,106.8424994\",\"kategori_lokasi_id\":6,\"created_at\":\"2024-06-19T04:56:12.000000Z\",\"updated_at\":\"2024-06-19T04:56:12.000000Z\"},{\"id\":38,\"name\":\"ZXC Rama\",\"address\":\"ZXC Rama - Gg. 1 No.2 K, RT.2\\/RW.6, Tomang, Grogol petamburan\",\"kotas_id\":1,\"coordinate\":\"-6.2224125,106.8588638\",\"kategori_lokasi_id\":4,\"created_at\":\"2024-06-19T04:56:27.000000Z\",\"updated_at\":\"2024-06-19T04:56:27.000000Z\"}]', '[{\"lat\":-6.3507166,\"lng\":106.974842},{\"lat\":-6.2723612,\"lng\":106.8466045},{\"lat\":-6.170450799999999,\"lng\":106.7970057}]', 'Mulai Bongkar'),
-(38, 'SRS24092024000002', 2, 2, '2024-09-24', 1, NULL, NULL, NULL, 1, 'Pipa Paralon AW 1/2', 11000, 11, 100, 200000, 200000, 'Jangan lupa bawa terpal karena musim ujan', '2024-09-23 21:17:29', '2024-09-23 21:17:29', '{\"id\":1,\"name\":\"PT. Rusli Vinilon Sakti\",\"address\":\"PT. Rusli Vinilon Sakti - Jl. Raya Narogong No.KM 15, RW.5, Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820\",\"kotas_id\":1,\"coordinate\":\"-6.3506041,106.9696443\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-10T04:03:31.000000Z\",\"updated_at\":\"2024-06-10T04:03:31.000000Z\"}', '[{\"id\":36,\"name\":\"Bintang Terang (Pasar Minggu), TB\",\"address\":\"Bintang Terang (Pasar Minggu), TB - No. 22 A, Jl. Raya Rw. Bambu, RT.13\\/RW.5, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12520\",\"kotas_id\":5,\"coordinate\":\"-6.2928865,106.838721\",\"kategori_lokasi_id\":6,\"created_at\":\"2024-06-19T04:56:12.000000Z\",\"updated_at\":\"2024-06-19T04:56:12.000000Z\"},{\"id\":38,\"name\":\"ZXC Rama\",\"address\":\"ZXC Rama - Gg. 1 No.2 K, RT.2\\/RW.6, Tomang, Grogol petamburan\",\"kotas_id\":1,\"coordinate\":\"-6.2224125,106.8588638\",\"kategori_lokasi_id\":4,\"created_at\":\"2024-06-19T04:56:27.000000Z\",\"updated_at\":\"2024-06-19T04:56:27.000000Z\"}]', '[{\"lat\":-6.3507166,\"lng\":106.974842},{\"lat\":-6.2924897,\"lng\":106.8415971},{\"lat\":-6.170450799999999,\"lng\":106.7970057}]', 'Dijadwalkan Berangkat');
+(34, 'SRS15092024000001', 1, 1, '2024-09-15', 1, 1, NULL, 3, 1, 'Pipa Besi AW 1/2', 1100, 12, 1000, 200000, 2000000, 'Haha', '2024-09-15 08:43:23', '2024-11-22 18:11:14', '{\"id\":1,\"name\":\"PT. Rusli Vinilon Sakti\",\"address\":\"PT. Rusli Vinilon Sakti - Jl. Raya Narogong No.KM 15, RW.5, Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820\",\"kotas_id\":1,\"coordinate\":\"-6.3506041,106.9696443\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-10T04:03:31.000000Z\",\"updated_at\":\"2024-06-10T04:03:31.000000Z\"}', '[{\"id\":28,\"name\":\"Aneka Elektro I\",\"address\":\"Aneka Elektro I - Jl. Raya Pasar Minggu No.83 7, RT.2\\/RW.1, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12510\",\"kotas_id\":5,\"coordinate\":\"-6.2832999,106.8444239\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-19T04:56:12.000000Z\",\"updated_at\":\"2024-06-19T04:56:12.000000Z\"}]', '[{\"lat\":-6.3507166,\"lng\":106.974842},{\"lat\":-6.284407499999999,\"lng\":106.8445221}]', 'Mulai Bongkar'),
+(35, 'SRS15092024000002', 1, 1, '2024-09-15', 2, 1, NULL, 3, 1, 'Pipa Besi AW 1/2', 1200, 1200, 1000, 20000, 2000000, 'Haghahsa', '2024-09-15 08:47:10', '2024-11-22 17:57:57', '{\"id\":1,\"name\":\"PT. Rusli Vinilon Sakti\",\"address\":\"PT. Rusli Vinilon Sakti - Jl. Raya Narogong No.KM 15, RW.5, Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820\",\"kotas_id\":1,\"coordinate\":\"-6.3506041,106.9696443\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-10T04:03:31.000000Z\",\"updated_at\":\"2024-06-10T04:03:31.000000Z\"}', '[{\"id\":31,\"name\":\"Bangun Indah Gemilang(Psr Mgg)\",\"address\":\"Bangun Indah Gemilang(Psr Mgg) - 12, Jl. Taman Margasatwa Raya No.2, RT.12\\/RW.5, Jati Padang, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12540\",\"kotas_id\":5,\"coordinate\":\"-6.292806,106.8228914\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-19T04:56:12.000000Z\",\"updated_at\":\"2024-06-19T04:56:12.000000Z\"}]', '[{\"lat\":-6.3507166,\"lng\":106.974842},{\"lat\":-6.293070699999999,\"lng\":106.8230966}]', 'Menuju Lokasi Muat'),
+(36, 'SRS15092024000003', 2, 1, '2024-09-15', 1, 1, NULL, 3, 1, 'Pipa Besi AW 1/2', 120, 120, 120, 20000, 2000000, 'Bawa bom nuklir ya', '2024-09-15 08:50:12', '2024-11-24 20:46:01', '{\"id\":1,\"name\":\"PT. Rusli Vinilon Sakti\",\"address\":\"PT. Rusli Vinilon Sakti - Jl. Raya Narogong No.KM 15, RW.5, Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820\",\"kotas_id\":1,\"coordinate\":\"-6.3506041,106.9696443\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-10T04:03:31.000000Z\",\"updated_at\":\"2024-06-10T04:03:31.000000Z\"}', '[{\"id\":37,\"name\":\"Bumi Mas (Nawi), TB\",\"address\":\"Bumi Mas (Nawi), TB - No. 29 B, Jl. H. Nawi Raya, RT.7\\/RW.2, Gandaria Sel., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12420\",\"kotas_id\":5,\"coordinate\":\"-6.2643107,106.7917814\",\"kategori_lokasi_id\":6,\"created_at\":\"2024-06-19T04:56:12.000000Z\",\"updated_at\":\"2024-06-19T04:56:12.000000Z\"}]', '[{\"lat\":-6.3507166,\"lng\":106.974842},{\"lat\":-6.2637247,\"lng\":106.7935374}]', 'Menuju Lokasi Bongkar'),
+(37, 'SRS24092024000001', 1, 1, '2024-09-24', 1, NULL, NULL, 3, 1, 'Pipa HDPE', 100, 100, 10000, 200000, 200000, 'Jangan lupa bawa keluarga ya sekalian piknik', '2024-09-23 21:15:29', '2024-10-01 00:46:16', '{\"id\":1,\"name\":\"PT. Rusli Vinilon Sakti\",\"address\":\"PT. Rusli Vinilon Sakti - Jl. Raya Narogong No.KM 15, RW.5, Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820\",\"kotas_id\":1,\"coordinate\":\"-6.3506041,106.9696443\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-10T04:03:31.000000Z\",\"updated_at\":\"2024-06-10T04:03:31.000000Z\"}', '[{\"id\":33,\"name\":\"Bangun Jaya ( Pasar Minggu )\",\"address\":\"Bangun Jaya ( Pasar Minggu ) - Jl. Raya Ps. Minggu No.43, Pejaten Timur, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12510\",\"kotas_id\":5,\"coordinate\":\"-6.2836997,106.8424994\",\"kategori_lokasi_id\":6,\"created_at\":\"2024-06-19T04:56:12.000000Z\",\"updated_at\":\"2024-06-19T04:56:12.000000Z\"},{\"id\":38,\"name\":\"ZXC Rama\",\"address\":\"ZXC Rama - Gg. 1 No.2 K, RT.2\\/RW.6, Tomang, Grogol petamburan\",\"kotas_id\":1,\"coordinate\":\"-6.2224125,106.8588638\",\"kategori_lokasi_id\":4,\"created_at\":\"2024-06-19T04:56:27.000000Z\",\"updated_at\":\"2024-06-19T04:56:27.000000Z\"}]', '[{\"lat\":-6.3507166,\"lng\":106.974842},{\"lat\":-6.2723612,\"lng\":106.8466045},{\"lat\":-6.170450799999999,\"lng\":106.7970057}]', 'Dijadwalkan Berangkat'),
+(38, 'SRS24092024000002', 2, 2, '2024-09-24', 1, NULL, NULL, NULL, 1, 'Pipa Paralon AW 1/2', 1100, 25, 1000, 200000, 200000, 'Jangan lupa bawa terpal karena musim ujan', '2024-09-23 21:17:29', '2024-09-28 11:44:13', '{\"id\":1,\"name\":\"PT. Rusli Vinilon Sakti\",\"address\":\"PT. Rusli Vinilon Sakti - Jl. Raya Narogong No.KM 15, RW.5, Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820\",\"kotas_id\":1,\"coordinate\":\"-6.3506041,106.9696443\",\"kategori_lokasi_id\":5,\"created_at\":\"2024-06-10T04:03:31.000000Z\",\"updated_at\":\"2024-06-10T04:03:31.000000Z\"}', '[{\"id\":36,\"name\":\"Bintang Terang (Pasar Minggu), TB\",\"address\":\"Bintang Terang (Pasar Minggu), TB - No. 22 A, Jl. Raya Rw. Bambu, RT.13\\/RW.5, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12520\",\"kotas_id\":5,\"coordinate\":\"-6.2928865,106.838721\",\"kategori_lokasi_id\":6,\"created_at\":\"2024-06-19T04:56:12.000000Z\",\"updated_at\":\"2024-06-19T04:56:12.000000Z\"},{\"id\":38,\"name\":\"ZXC Rama\",\"address\":\"ZXC Rama - Gg. 1 No.2 K, RT.2\\/RW.6, Tomang, Grogol petamburan\",\"kotas_id\":1,\"coordinate\":\"-6.2224125,106.8588638\",\"kategori_lokasi_id\":4,\"created_at\":\"2024-06-19T04:56:27.000000Z\",\"updated_at\":\"2024-06-19T04:56:27.000000Z\"}]', '[{\"lat\":-6.3507166,\"lng\":106.974842},{\"lat\":-6.2924897,\"lng\":106.8415971},{\"lat\":-6.170450799999999,\"lng\":106.7970057}]', 'Dijadwalkan Berangkat');
 
 -- --------------------------------------------------------
 
@@ -380,11 +442,45 @@ CREATE TABLE `order_status_logs` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `orders_id` bigint(20) UNSIGNED NOT NULL,
   `status` enum('Dijadwalkan Berangkat','Menuju Lokasi Muat','Sampai Lokasi Muat','Mulai Muat','Selesai Muat','Menuju Lokasi Bongkar','Sampai Lokasi Bongkar','Mulai Bongkar','Selesai Bongkar') NOT NULL DEFAULT 'Dijadwalkan Berangkat',
+  `location_id` int(11) DEFAULT NULL,
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  `location_id` int(11) DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `order_status_logs`
+--
+
+INSERT INTO `order_status_logs` (`id`, `orders_id`, `status`, `location_id`, `timestamp`, `created_at`, `updated_at`) VALUES
+(261, 35, 'Menuju Lokasi Muat', 0, '2024-09-30 22:39:55', '2024-09-30 22:39:55', '2024-09-30 22:39:55'),
+(262, 35, 'Sampai Lokasi Muat', 0, '2024-09-30 22:40:26', '2024-09-30 22:40:26', '2024-09-30 22:40:26'),
+(263, 35, 'Mulai Muat', 0, '2024-09-30 22:40:29', '2024-09-30 22:40:29', '2024-09-30 22:40:29'),
+(264, 35, 'Selesai Muat', 0, '2024-09-30 22:40:55', '2024-09-30 22:40:55', '2024-09-30 22:40:55'),
+(265, 35, 'Menuju Lokasi Bongkar', 0, '2024-09-30 22:40:57', '2024-09-30 22:40:57', '2024-09-30 22:40:57'),
+(266, 35, 'Sampai Lokasi Bongkar', 0, '2024-09-30 22:41:00', '2024-09-30 22:41:00', '2024-09-30 22:41:00'),
+(267, 35, 'Mulai Bongkar', 0, '2024-09-30 22:41:02', '2024-09-30 22:41:02', '2024-09-30 22:41:02'),
+(268, 35, 'Selesai Bongkar', 0, '2024-09-30 22:41:31', '2024-09-30 22:41:31', '2024-09-30 22:41:31'),
+(269, 36, 'Menuju Lokasi Muat', 0, '2024-09-30 23:33:52', '2024-09-30 23:33:52', '2024-09-30 23:33:52'),
+(270, 37, 'Menuju Lokasi Muat', 0, '2024-09-30 23:38:15', '2024-09-30 23:38:15', '2024-09-30 23:38:15'),
+(271, 36, 'Menuju Lokasi Muat', 0, '2024-09-30 23:55:09', '2024-09-30 23:55:09', '2024-09-30 23:55:09'),
+(272, 37, 'Menuju Lokasi Muat', 0, '2024-10-01 00:27:03', '2024-10-01 00:27:03', '2024-10-01 00:27:03'),
+(273, 36, 'Menuju Lokasi Muat', 0, '2024-10-01 00:37:22', '2024-10-01 00:37:22', '2024-10-01 00:37:22'),
+(274, 37, 'Menuju Lokasi Muat', 0, '2024-10-01 00:46:16', '2024-10-01 00:46:16', '2024-10-01 00:46:16'),
+(275, 34, 'Menuju Lokasi Muat', 0, '2024-11-22 17:23:21', '2024-11-22 17:23:21', '2024-11-22 17:23:21'),
+(276, 34, 'Sampai Lokasi Muat', 0, '2024-11-22 17:23:49', '2024-11-22 17:23:49', '2024-11-22 17:23:49'),
+(277, 34, 'Mulai Muat', 0, '2024-11-22 17:24:07', '2024-11-22 17:24:07', '2024-11-22 17:24:07'),
+(278, 34, 'Selesai Muat', 0, '2024-11-22 17:35:15', '2024-11-22 17:35:15', '2024-11-22 17:35:15'),
+(279, 35, 'Menuju Lokasi Muat', 1, '2024-11-23 00:57:00', '2024-11-22 17:57:57', '2024-11-22 17:57:57'),
+(280, 35, 'Sampai Lokasi Muat', 1, '2024-11-23 00:57:00', '2024-11-22 17:57:57', '2024-11-22 17:57:57'),
+(281, 34, 'Menuju Lokasi Bongkar', 0, '2024-11-22 18:10:51', '2024-11-22 18:10:51', '2024-11-22 18:10:51'),
+(282, 34, 'Sampai Lokasi Bongkar', 0, '2024-11-22 18:11:03', '2024-11-22 18:11:03', '2024-11-22 18:11:03'),
+(283, 34, 'Mulai Bongkar', 0, '2024-11-22 18:11:14', '2024-11-22 18:11:14', '2024-11-22 18:11:14'),
+(284, 36, 'Menuju Lokasi Muat', 0, '2024-11-24 20:43:53', '2024-11-24 20:43:53', '2024-11-24 20:43:53'),
+(285, 36, 'Sampai Lokasi Muat', 0, '2024-11-24 20:44:36', '2024-11-24 20:44:36', '2024-11-24 20:44:36'),
+(286, 36, 'Mulai Muat', 0, '2024-11-24 20:44:42', '2024-11-24 20:44:42', '2024-11-24 20:44:42'),
+(287, 36, 'Selesai Muat', 0, '2024-11-24 20:45:45', '2024-11-24 20:45:45', '2024-11-24 20:45:45'),
+(288, 36, 'Menuju Lokasi Bongkar', 0, '2024-11-24 20:46:01', '2024-11-24 20:46:01', '2024-11-24 20:46:01');
 
 -- --------------------------------------------------------
 
@@ -394,9 +490,11 @@ CREATE TABLE `order_status_logs` (
 
 CREATE TABLE `otp_codes` (
   `id` bigint(20) UNSIGNED NOT NULL,
+  `drivers_id` bigint(20) UNSIGNED DEFAULT NULL,
   `phone_number` varchar(255) NOT NULL,
   `otp_code` varchar(255) NOT NULL,
   `expires_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `is_logged_in` tinyint(1) DEFAULT 0,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -405,59 +503,41 @@ CREATE TABLE `otp_codes` (
 -- Dumping data for table `otp_codes`
 --
 
-INSERT INTO `otp_codes` (`id`, `phone_number`, `otp_code`, `expires_at`, `created_at`, `updated_at`) VALUES
-(7, '085721207992', 'hp6Z', '2024-09-10 01:47:44', '2024-09-09 18:47:44', '2024-09-09 18:47:44'),
-(8, '085721207990', '4622', '2024-09-10 02:17:50', '2024-09-09 19:17:50', '2024-09-09 19:17:50'),
-(9, '085721207991', '1297', '2024-09-10 02:19:51', '2024-09-09 19:19:51', '2024-09-09 19:19:51'),
-(10, '085721207992', '4112', '2024-09-10 04:11:08', '2024-09-09 21:11:08', '2024-09-09 21:11:08'),
-(11, '085721207992', '8497', '2024-09-12 02:06:03', '2024-09-11 19:06:03', '2024-09-11 19:06:03'),
-(12, '085721207992', '4648', '2024-09-12 04:56:26', '2024-09-11 21:56:26', '2024-09-11 21:56:26'),
-(13, '085721207992', '1594', '2024-09-12 04:58:52', '2024-09-11 21:58:52', '2024-09-11 21:58:52'),
-(14, '1234567889', '9802', '2024-09-12 05:04:42', '2024-09-11 22:04:42', '2024-09-11 22:04:42'),
-(15, '1234567890', '1111', '2024-09-12 05:06:20', '2024-09-11 22:06:11', '2024-09-11 22:06:11'),
-(16, '1234567890', '1544', '2024-09-12 05:06:52', '2024-09-11 22:06:52', '2024-09-11 22:06:52'),
-(17, '1234567890', '2108', '2024-09-12 05:07:27', '2024-09-11 22:07:27', '2024-09-11 22:07:27'),
-(18, '1234567890', '9278', '2024-09-12 06:02:04', '2024-09-11 23:02:04', '2024-09-11 23:02:04'),
-(19, '1234567890', '2549', '2024-09-12 06:02:31', '2024-09-11 23:02:31', '2024-09-11 23:02:31'),
-(20, '1234567890', '8218', '2024-09-13 02:14:21', '2024-09-12 19:14:21', '2024-09-12 19:14:21'),
-(21, '1234567890', '2637', '2024-09-13 02:14:21', '2024-09-12 19:14:21', '2024-09-12 19:14:21'),
-(22, '1234567890', '7310', '2024-09-13 02:34:16', '2024-09-12 19:34:16', '2024-09-12 19:34:16'),
-(23, '1234567890', '9754', '2024-09-13 02:34:16', '2024-09-12 19:34:16', '2024-09-12 19:34:16'),
-(24, '1234567890', '3756', '2024-09-13 02:34:16', '2024-09-12 19:34:16', '2024-09-12 19:34:16'),
-(25, '1234567890', '5673', '2024-09-14 04:04:23', '2024-09-13 21:04:23', '2024-09-13 21:04:23'),
-(26, '1234567890', '3553', '2024-09-14 06:44:11', '2024-09-13 23:44:11', '2024-09-13 23:44:11'),
-(27, '1234567890', '2212', '2024-09-14 07:38:23', '2024-09-14 00:38:23', '2024-09-14 00:38:23'),
-(28, '1234567890', '8280', '2024-09-14 07:50:21', '2024-09-14 00:50:21', '2024-09-14 00:50:21'),
-(29, '1234567890', '6734', '2024-09-15 02:14:55', '2024-09-14 19:14:55', '2024-09-14 19:14:55'),
-(30, '1234567890', '6788', '2024-09-15 04:37:08', '2024-09-14 21:37:08', '2024-09-14 21:37:08'),
-(31, '1234567890', '3988', '2024-09-15 04:38:02', '2024-09-14 21:38:02', '2024-09-14 21:38:02'),
-(32, '1234567890', '1830', '2024-09-15 04:47:28', '2024-09-14 21:47:28', '2024-09-14 21:47:28'),
-(33, '1234567890', '3314', '2024-09-15 04:56:50', '2024-09-14 21:56:50', '2024-09-14 21:56:50'),
-(34, '1234567890', '3545', '2024-09-15 05:06:33', '2024-09-14 22:06:33', '2024-09-14 22:06:33'),
-(35, '1234567890', '5484', '2024-09-15 05:33:35', '2024-09-14 22:33:35', '2024-09-14 22:33:35'),
-(36, '1234567890', '8508', '2024-09-15 05:42:41', '2024-09-14 22:42:41', '2024-09-14 22:42:41'),
-(37, '1234567890', '3883', '2024-09-15 05:52:12', '2024-09-14 22:52:12', '2024-09-14 22:52:12'),
-(38, '1234567890', '9649', '2024-09-15 06:47:47', '2024-09-14 23:47:47', '2024-09-14 23:47:47'),
-(39, '1234567890', '2750', '2024-09-15 17:41:36', '2024-09-15 10:41:36', '2024-09-15 10:41:36'),
-(40, '1234567890', '2327', '2024-09-15 19:18:24', '2024-09-15 12:18:24', '2024-09-15 12:18:24'),
-(41, '1234567890', '8278', '2024-09-15 19:18:24', '2024-09-15 12:18:24', '2024-09-15 12:18:24'),
-(42, '1234567890', '3476', '2024-09-16 02:40:52', '2024-09-15 19:40:52', '2024-09-15 19:40:52'),
-(43, '1234567890', '7301', '2024-09-16 03:00:34', '2024-09-15 20:00:34', '2024-09-15 20:00:34'),
-(44, '1234567890', '2744', '2024-09-16 06:03:02', '2024-09-15 23:03:02', '2024-09-15 23:03:02'),
-(45, '1234567890', '7231', '2024-09-16 09:07:53', '2024-09-16 02:07:53', '2024-09-16 02:07:53'),
-(46, '1234567890', '9945', '2024-09-16 09:23:38', '2024-09-16 02:23:38', '2024-09-16 02:23:38'),
-(47, '1234567890', '5150', '2024-09-16 09:50:36', '2024-09-16 02:50:36', '2024-09-16 02:50:36'),
-(48, '1234567890', '8926', '2024-09-16 10:03:01', '2024-09-16 03:03:01', '2024-09-16 03:03:01'),
-(49, '1234567890', '2330', '2024-09-16 10:14:00', '2024-09-16 03:14:00', '2024-09-16 03:14:00'),
-(50, '1234567890', '9440', '2024-09-16 10:22:58', '2024-09-16 03:22:58', '2024-09-16 03:22:58'),
-(51, '1234567890', '2774', '2024-09-16 13:36:19', '2024-09-16 06:36:19', '2024-09-16 06:36:19'),
-(52, '1234567890', '7660', '2024-09-16 14:30:07', '2024-09-16 07:30:07', '2024-09-16 07:30:07'),
-(53, '1234567890', '5524', '2024-09-16 14:50:06', '2024-09-16 07:50:06', '2024-09-16 07:50:06'),
-(54, '1234567890', '8473', '2024-09-17 01:32:26', '2024-09-16 18:32:26', '2024-09-16 18:32:26'),
-(55, '1234567890', '9464', '2024-09-17 01:32:26', '2024-09-16 18:32:26', '2024-09-16 18:32:26'),
-(56, '1234567890', '5091', '2024-09-17 03:35:31', '2024-09-16 20:35:31', '2024-09-16 20:35:31'),
-(57, '1234567890', '4444', '2024-09-17 04:05:34', '2024-09-16 21:05:34', '2024-09-16 21:05:34'),
-(58, '1234567890', '7066', '2024-09-17 04:22:59', '2024-09-16 21:22:59', '2024-09-16 21:22:59');
+INSERT INTO `otp_codes` (`id`, `drivers_id`, `phone_number`, `otp_code`, `expires_at`, `is_logged_in`, `created_at`, `updated_at`) VALUES
+(99, 3, '085721207992', '4640', '2024-10-01 03:54:20', 1, '2024-09-30 20:29:20', '2024-09-30 20:54:20'),
+(100, 3, '085721207992', '1267', '2024-10-01 03:29:33', 1, '2024-09-30 20:29:20', '2024-09-30 20:29:33'),
+(101, 3, '085721207992', '2512', '2024-10-01 03:42:23', 0, '2024-09-30 20:42:23', '2024-09-30 20:42:23'),
+(102, 3, '085721207992', '6997', '2024-10-01 03:54:05', 0, '2024-09-30 20:54:05', '2024-09-30 20:54:05'),
+(103, 3, '085721207992', '8621', '2024-10-01 05:06:24', 1, '2024-09-30 22:06:10', '2024-09-30 22:06:24'),
+(104, 3, '085721207992', '1111', '2024-11-25 03:37:31', 1, '2024-09-30 22:24:01', '2024-11-24 20:37:31'),
+(105, 3, '085721207992', '5373', '2024-10-01 05:31:10', 0, '2024-09-30 22:31:10', '2024-09-30 22:31:10'),
+(106, 3, '085721207992', '3283', '2024-10-01 05:31:47', 0, '2024-09-30 22:31:47', '2024-09-30 22:31:47'),
+(107, 3, '085721207992', '4477', '2024-10-01 05:35:54', 0, '2024-09-30 22:35:54', '2024-09-30 22:35:54'),
+(108, 3, '085721207992', '8594', '2024-10-01 06:07:45', 0, '2024-09-30 23:07:45', '2024-09-30 23:07:45'),
+(109, 3, '085721207992', '1921', '2024-10-01 06:33:16', 0, '2024-09-30 23:33:16', '2024-09-30 23:33:16'),
+(110, 3, '085721207992', '9303', '2024-10-01 06:37:42', 0, '2024-09-30 23:37:42', '2024-09-30 23:37:42'),
+(111, 3, '085721207992', '1648', '2024-10-01 06:54:09', 0, '2024-09-30 23:54:09', '2024-09-30 23:54:09'),
+(112, 3, '085721207992', '6055', '2024-10-01 07:26:21', 0, '2024-10-01 00:26:21', '2024-10-01 00:26:21'),
+(113, 3, '085721207992', '2124', '2024-10-01 07:35:50', 0, '2024-10-01 00:35:50', '2024-10-01 00:35:50'),
+(114, 3, '085721207992', '8893', '2024-10-01 07:45:58', 0, '2024-10-01 00:45:58', '2024-10-01 00:45:58'),
+(115, 3, '085721207992', '2433', '2024-10-01 07:45:58', 0, '2024-10-01 00:45:58', '2024-10-01 00:45:58'),
+(116, 3, '085721207992', '7158', '2024-10-01 08:15:41', 0, '2024-10-01 01:15:41', '2024-10-01 01:15:41'),
+(117, 3, '085721207992', '7614', '2024-10-01 08:35:14', 0, '2024-10-01 01:35:14', '2024-10-01 01:35:14'),
+(118, 3, '085721207992', '6676', '2024-10-01 08:45:13', 0, '2024-10-01 01:45:13', '2024-10-01 01:45:13'),
+(119, 3, '085721207992', '2194', '2024-10-01 09:21:32', 0, '2024-10-01 02:21:32', '2024-10-01 02:21:32'),
+(120, 3, '085721207992', '8303', '2024-10-01 09:42:32', 0, '2024-10-01 02:42:32', '2024-10-01 02:42:32'),
+(121, 3, '085721207992', '8758', '2024-10-01 09:53:22', 0, '2024-10-01 02:53:22', '2024-10-01 02:53:22'),
+(122, 3, '085721207992', '3251', '2024-10-01 09:57:04', 0, '2024-10-01 02:57:04', '2024-10-01 02:57:04'),
+(123, 3, '085721207992', '3398', '2024-10-01 10:04:58', 0, '2024-10-01 03:04:58', '2024-10-01 03:04:58'),
+(124, 3, '085721207992', '8445', '2024-10-01 11:00:56', 0, '2024-10-01 04:00:56', '2024-10-01 04:00:56'),
+(125, 3, '085721207992', '6180', '2024-11-17 00:56:43', 0, '2024-11-16 17:56:43', '2024-11-16 17:56:43'),
+(126, 3, '085721207992', '1435', '2024-11-21 15:15:22', 0, '2024-11-21 08:15:22', '2024-11-21 08:15:22'),
+(127, 3, '085721207992', '6091', '2024-11-23 00:21:35', 0, '2024-11-22 17:21:35', '2024-11-22 17:21:35'),
+(128, 3, '085721207992', '6593', '2024-11-23 00:21:39', 0, '2024-11-22 17:21:39', '2024-11-22 17:21:39'),
+(129, 3, '085721207992', '2502', '2024-11-25 03:38:46', 1, '2024-11-24 20:37:02', '2024-11-24 20:38:46'),
+(130, 3, '085721207992', '2828', '2024-11-25 03:42:51', 1, '2024-11-24 20:42:10', '2024-11-24 20:42:51'),
+(131, 3, '085721207992', '9002', '2024-11-30 14:21:15', 0, '2024-11-30 07:21:15', '2024-11-30 07:21:15'),
+(132, 3, '085721207992', '4795', '2024-11-30 14:23:52', 0, '2024-11-30 07:23:52', '2024-11-30 07:23:52');
 
 -- --------------------------------------------------------
 
@@ -651,7 +731,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'Rama', 'rama@gmail.com', NULL, '$2y$10$HWdyaPSr.xlVNLlUkP0Au.LsFNBTq.bICBvsKuxPaxQWZFBYL5f4O', NULL, '2024-06-18 18:30:34', '2024-06-18 18:30:34'),
-(2, 'ZXC Rama', 'rjs@gmail.com', NULL, '$2y$10$DpE49Iz3KSgJK/lfa2ijNusd.icHLBf6YBZmIAZi7zr69TUMf3gEC', NULL, '2024-06-21 03:07:05', '2024-06-21 03:07:05');
+(2, 'ZXC Rama', 'rjs@gmail.com', NULL, '$2y$10$DpE49Iz3KSgJK/lfa2ijNusd.icHLBf6YBZmIAZi7zr69TUMf3gEC', NULL, '2024-06-21 03:07:05', '2024-06-21 03:07:05'),
+(3, 'ZXC Rama', 'ramadhan8100@gmail.com', NULL, '$2y$10$lt4Wq0P8cntEvC8OF8jysuLLpwdFK34/Emo2eol/7V.Pm5xMV4qkm', NULL, '2024-11-16 17:47:32', '2024-11-16 17:47:32'),
+(4, 'Jon Stewart Doe', 'jsd@gmail.com', NULL, '$2y$10$20MtA.NJcyS2NWAIMEJzI.X/6ldjc1emi5pw/ODYKuaeppDzWj1ze', NULL, '2024-11-22 08:22:51', '2024-11-22 08:22:51');
 
 -- --------------------------------------------------------
 
@@ -711,11 +793,24 @@ ALTER TABLE `drivers`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `driver_locations`
+--
+ALTER TABLE `driver_locations`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`);
+
+--
+-- Indexes for table `jobs`
+--
+ALTER TABLE `jobs`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `jobs_queue_index` (`queue`);
 
 --
 -- Indexes for table `kategori_lokasi`
@@ -775,7 +870,8 @@ ALTER TABLE `order_status_logs`
 -- Indexes for table `otp_codes`
 --
 ALTER TABLE `otp_codes`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `otp_codes_drivers_id_foreign` (`drivers_id`);
 
 --
 -- Indexes for table `password_reset_tokens`
@@ -865,19 +961,31 @@ ALTER TABLE `customers`
 -- AUTO_INCREMENT for table `documents`
 --
 ALTER TABLE `documents`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=194;
 
 --
 -- AUTO_INCREMENT for table `drivers`
 --
 ALTER TABLE `drivers`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `driver_locations`
+--
+ALTER TABLE `driver_locations`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `jobs`
+--
+ALTER TABLE `jobs`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `kategori_lokasi`
@@ -907,7 +1015,7 @@ ALTER TABLE `lokasi_muat`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -919,13 +1027,13 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `order_status_logs`
 --
 ALTER TABLE `order_status_logs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=289;
 
 --
 -- AUTO_INCREMENT for table `otp_codes`
 --
 ALTER TABLE `otp_codes`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -973,7 +1081,7 @@ ALTER TABLE `unload_addresses`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `vendors`
@@ -1029,6 +1137,12 @@ ALTER TABLE `orders`
 --
 ALTER TABLE `order_status_logs`
   ADD CONSTRAINT `order_status_logs_orders_id_foreign` FOREIGN KEY (`orders_id`) REFERENCES `orders` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `otp_codes`
+--
+ALTER TABLE `otp_codes`
+  ADD CONSTRAINT `otp_codes_drivers_id_foreign` FOREIGN KEY (`drivers_id`) REFERENCES `drivers` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `surat_jalan`

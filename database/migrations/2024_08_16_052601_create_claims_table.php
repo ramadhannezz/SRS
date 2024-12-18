@@ -10,14 +10,17 @@ class CreateClaimsTable extends Migration
     {
         Schema::create('claims', function (Blueprint $table) {
             $table->id('id_claim');
-            $table->foreignId('nomor_order')->constrained('orders')->onDelete('cascade');
-            $table->foreignId('nama_muatan')->constrained('orders')->onDelete('cascade');
-            $table->foreignId('jumlah_barang')->constrained('orders')->onDelete('cascade');
+            $table->unsignedBigInteger('orders_id');
+            $table->unsignedBigInteger('nama_muatan');
+            $table->unsignedBigInteger('jumlah_barang');
             $table->enum('status_muatan', ['Rusak', 'Hilang', 'Kurang', 'Lebih']);
-            $table->string('nama_muatan_claim');
+            $table->string('nama_muatan_claim', 255);
             $table->integer('jumlah_muatan_claim');
             $table->text('catatan_muatan')->nullable();
             $table->timestamps();
+
+            // Relasi ke tabel orders (jika ada foreign key)
+            $table->foreign('orders_id')->references('id')->on('orders')->onDelete('cascade');
         });
     }
 
